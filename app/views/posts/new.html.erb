@@ -1,0 +1,9 @@
+<%= form_tag(posts_path, :method => "post") do %>
+    <div class="form-group">
+    <%= text_field_tag(:title, nil, placeholder: "Post Title", class: "form-control") %>
+    </div>
+    <div class="form-group">
+    <%= text_area_tag(:description, nil, placeholder: "Post Description", class: "form-control") %>
+    </div>
+    <%= submit_tag "create", class: "btn btn-success btn-block" %>
+<% end %>
