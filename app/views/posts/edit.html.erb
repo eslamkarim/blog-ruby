@@ -1,0 +1,9 @@
+<%= form_for(@post, url: @post) do |f| %>
+    <div class="form-group">
+    <%= f.text_field(:title, placeholder: "Post Title", class: "form-control") %>
+    </div>
+    <div class="form-group">
+    <%= f.text_area(:description, placeholder: "Post Description", class: "form-control") %>
+    </div>
+    <%= submit_tag "Update", class: "btn btn-success btn-block" %>
+<% end %>
